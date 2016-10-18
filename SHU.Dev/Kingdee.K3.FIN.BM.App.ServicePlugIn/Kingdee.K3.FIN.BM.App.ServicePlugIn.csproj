@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>002b8cee-c532-486d-a8de-bff67f5f0e9d</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Kingdee.K3.FIN.BM.App.ServicePlugIn</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.BusinessEntity" />
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.K3.FIN.BM.App.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Kingdee.K3.FIN.Core" />
+    <Reference Include="Kingdee.BOS.App" />
+    <Reference Include="Kingdee.BOS.Contracts" />
+    <Reference Include="Kingdee.K3.FIN.BM.Contracts" />
+    <Reference Include="Kingdee.K3.FIN.ReportEntity" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Adjust\Commit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Adjust\UnCommit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCalendar\CreateBudgetPriodServicePlugIn.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCalendar\Save.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCtrlPlateform\Save.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCtrlPlateform\SaveValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCtrlRule\Delete.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCtrlRule\Save.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetCtrlRule\SaveValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetFormula\Save.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetFormula\ItemDataFormulaSaveValidator.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetScheme\UnAudit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\BudgetScheme\UnAuditValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\CommonValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportSample\Delete.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportSample\DeleteValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportSample\Forbid.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportSample\Submit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportSample\SubmitValidator.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportSample\UnForbid.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportScheme\Delete.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportScheme\RptSchemeDeleteValidator.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportScheme\Save.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\ReportScheme\SaveValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\Delete.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\SaveBase.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\SaveValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\SubmitBase.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\SubmitValidate.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\UnAuditBase.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Report\UnAuditValidate.cs" />
+  </ItemGroup>
+</Project>

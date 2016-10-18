@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4d0129af-d8bb-48cf-af8e-b7a5c73247cf</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Kingdee.K3.FIN.BM.ServiceHelper</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.K3.FIN.ReportEntity" />
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.BusinessEntity" />
+    <Reference Include="Kingdee.BOS.KDSReportEntity" />
+    <Reference Include="System.Data" />
+    <Reference Include="Kingdee.K3.FIN.BM.Contracts" />
+    <Reference Include="Kingdee.BOS.Contracts" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetAdjustServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetCtrlPlateformServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetDimensionServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetFormulaServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetMonitorServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetOrgHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BudgetReportPlateHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\BMCommonServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\CaculateServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\DistributeServiceHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\ReportOperationHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\ReportOrgHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\ServiceHelper\ReportSchemeHelper.cs" />
+  </ItemGroup>
+</Project>

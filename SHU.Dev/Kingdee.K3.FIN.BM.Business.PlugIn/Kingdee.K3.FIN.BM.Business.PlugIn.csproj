@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>24e0b385-5dc6-4f1c-b0a2-0118fd9e6ec4</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Kingdee.K3.FIN.BM.Business.PlugIn</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.BusinessEntity" />
+    <Reference Include="Kingdee.BOS.KDSReportCommon" />
+    <Reference Include="Kingdee.K3.FIN.ReportEntity" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.Core" />
+    <Reference Include="Kingdee.BOS.KDSReportEntity" />
+    <Reference Include="System.Core" />
+    <Reference Include="Kingdee.BOS.Model" />
+    <Reference Include="Kingdee.K3.FIN.Core" />
+    <Reference Include="Kingdee.K3.FIN.Business.PlugIn" />
+    <Reference Include="System" />
+    <Reference Include="Kingdee.BOS.ServiceHelper" />
+    <Reference Include="Kingdee.K3.FIN.BM.ServiceHelper" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Kingdee.K3.FIN.BM.Contracts" />
+    <Reference Include="Kingdee.BOS.App.Core" />
+    <Reference Include="Kingdee.K3.FIN.ServiceHelper" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Kingdee.BOS.VerificationHelper" />
+    <Reference Include="Kingdee.BOS.ProductModel" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BizFormPlugIn\RenameSheetPligIn.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BizVoucherSysInfor.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\VchBillType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BizVoucherSystemTree.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BMCustomFromBase.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Fin\BmSampleDistributeEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BMSampleFillWizard.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BMSChemeDistribute.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BMSChemeEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BMSChemeList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetBussinessTypeSelect.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCalendarList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetConfigPlugin.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlLogEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetDeptOrgSelectEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetDeptOrgSelectList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetMonitor\BudgetMonitorSchemeSwitchEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetSchemeFillWizard.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BugdetDimScopeEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetAdjust.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetAdjustListPlugin.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCalendarEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlPlatformBatchAdd.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlPlatformEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlPlatformList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlRuleCondition.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlRuleEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\DimentionScopeType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlRuleField.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetCtrlRuleList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetFormulaEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetFormulaList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetFormulaSet.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetMonitorEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetOrgEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetOrgList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetOrgSelectEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportEditBase.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetReportEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetReportOrgList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BudgetReportPlateList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\BugdetCommon.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\CtrlRuleTestEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\DimensionList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ConditionSetPlugin.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\DataSearchPlugin.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\ServicePlugIn\Fin\DimensionEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\Business\PlugIn\PreConditionEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportSchemeEdit.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportSchemeHistoryList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportSchemeList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportDimDataFill.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\TempDynamicDimensionData.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportListBase.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportSampleList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportSchemeVersionList.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\SchemeSelector.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\EffectiveDateSetting.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\Utils.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Business\PlugIn\ReportSampleEdit.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9f482fa4-4c48-400c-8722-db9dfad21805</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Kingdee.K3.FIN.BM.Common.Core</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="System" />
+    <Reference Include="Kingdee.BOS.ServiceHelper" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BMConst.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BMFieldConst.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BMLanConst.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BMPageIDConst.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BudgetCalendarConst.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BudgetCalendarModel.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\CommonHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\BMCommonUtil.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\CreateBudgetPriodService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpressAnalysisResult.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpressionConfig.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpressionConst.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpressVariable.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpTransContext.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpTransHelper.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\Core\ExpressObj\ExpType.cs" />
+  </ItemGroup>
+</Project>

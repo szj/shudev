@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>307756a1-2ece-4343-b9f6-543fff40ebda</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Kingdee.K3.FIN.BM.Common.BusinessEntity</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.K3.FIN.ReportEntity" />
+    <Reference Include="System" />
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.BOS.KDSReportCommon" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetCalendar.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetDataEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetDataValue.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BillUsedValue.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DimensionType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\ItemDataProperty.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetExcuteStatus.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\ReportExcuteStatus.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetBuildStatus.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetEnum_FielType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetEnum_OrgType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetEnum_LogType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\SchemeEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\SchemeEntityExtend.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\SchemeOrgDetail.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeSample.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\ReportSample.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\SchemeMonitorEnify.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\SchemeEnifyReportBefortSaveDto.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetMonitorFilter.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\MonitorEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\MonitorOrgEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\MonitorOrgSampleEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\OrgEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\MonitorExecuteStatusDto.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\MonitorReprotDto.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\RunningAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetOrg.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetOrgEntry.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetReportStatusTipEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetReportEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\SheetEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetCtrlPlateformMain.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetCtrlPlateformEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\BudgetVerifyEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\Department.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeBMReport.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeDetail.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeDetail_Extend.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeSampleDetail.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeSource.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeTarget.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\DistributeTargetExtend.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\Organization.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\DimensionColumn.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\DimensionColumnCollection.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\ItemDataColumn.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\ItemDataColumnCollection.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\ReportDataEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\SheetDataEntity.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\SheetDataEntityCollection.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\ReportDataModel.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\SheetDataModel.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\Common\BusinessEntity\PivotGrid\SheetDataModelCollection.cs" />
+  </ItemGroup>
+</Project>

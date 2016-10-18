@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.App.Core", "Kingdee.K3.FIN.BM.App.Core\Kingdee.K3.FIN.BM.App.Core.csproj", "{E695A1EF-F70B-4A2A-89A9-7FD12835E41E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.App.KDSFunc", "Kingdee.K3.FIN.BM.App.KDSFunc\Kingdee.K3.FIN.BM.App.KDSFunc.csproj", "{44AA2F6D-B8A5-47D8-9A51-B4355D6DFAA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.App.Report", "Kingdee.K3.FIN.BM.App.Report\Kingdee.K3.FIN.BM.App.Report.csproj", "{A2358BD4-AA61-4766-BA38-F8EE33752D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.App.ServicePlugIn", "Kingdee.K3.FIN.BM.App.ServicePlugIn\Kingdee.K3.FIN.BM.App.ServicePlugIn.csproj", "{002B8CEE-C532-486D-A8DE-BFF67F5F0E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.Business.PlugIn", "Kingdee.K3.FIN.BM.Business.PlugIn\Kingdee.K3.FIN.BM.Business.PlugIn.csproj", "{24E0B385-5DC6-4F1C-B0A2-0118FD9E6EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.Common.BusinessEntity", "Kingdee.K3.FIN.BM.Common.BusinessEntity\Kingdee.K3.FIN.BM.Common.BusinessEntity.csproj", "{307756A1-2ECE-4343-B9F6-543FFF40EBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.Common.Core", "Kingdee.K3.FIN.BM.Common.Core\Kingdee.K3.FIN.BM.Common.Core.csproj", "{9F482FA4-4C48-400C-8722-DB9DFAD21805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.Contracts", "Kingdee.K3.FIN.BM.Contracts\Kingdee.K3.FIN.BM.Contracts.csproj", "{3E6718D9-E601-4799-A3A2-32C2D20E3BE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.Report.PlugIn", "Kingdee.K3.FIN.BM.Report.PlugIn\Kingdee.K3.FIN.BM.Report.PlugIn.csproj", "{57FF60D3-F349-4303-A15A-50EBED1B9241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.FIN.BM.ServiceHelper", "Kingdee.K3.FIN.BM.ServiceHelper\Kingdee.K3.FIN.BM.ServiceHelper.csproj", "{4D0129AF-D8BB-48CF-AF8E-B7A5C73247CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E695A1EF-F70B-4A2A-89A9-7FD12835E41E}.Debug|x86.ActiveCfg = Debug|x86
+		{E695A1EF-F70B-4A2A-89A9-7FD12835E41E}.Debug|x86.Build.0 = Debug|x86
+		{E695A1EF-F70B-4A2A-89A9-7FD12835E41E}.Release|x86.ActiveCfg = Release|x86
+		{E695A1EF-F70B-4A2A-89A9-7FD12835E41E}.Release|x86.Build.0 = Release|x86
+		{44AA2F6D-B8A5-47D8-9A51-B4355D6DFAA4}.Debug|x86.ActiveCfg = Debug|x86
+		{44AA2F6D-B8A5-47D8-9A51-B4355D6DFAA4}.Debug|x86.Build.0 = Debug|x86
+		{44AA2F6D-B8A5-47D8-9A51-B4355D6DFAA4}.Release|x86.ActiveCfg = Release|x86
+		{44AA2F6D-B8A5-47D8-9A51-B4355D6DFAA4}.Release|x86.Build.0 = Release|x86
+		{A2358BD4-AA61-4766-BA38-F8EE33752D61}.Debug|x86.ActiveCfg = Debug|x86
+		{A2358BD4-AA61-4766-BA38-F8EE33752D61}.Debug|x86.Build.0 = Debug|x86
+		{A2358BD4-AA61-4766-BA38-F8EE33752D61}.Release|x86.ActiveCfg = Release|x86
+		{A2358BD4-AA61-4766-BA38-F8EE33752D61}.Release|x86.Build.0 = Release|x86
+		{002B8CEE-C532-486D-A8DE-BFF67F5F0E9D}.Debug|x86.ActiveCfg = Debug|x86
+		{002B8CEE-C532-486D-A8DE-BFF67F5F0E9D}.Debug|x86.Build.0 = Debug|x86
+		{002B8CEE-C532-486D-A8DE-BFF67F5F0E9D}.Release|x86.ActiveCfg = Release|x86
+		{002B8CEE-C532-486D-A8DE-BFF67F5F0E9D}.Release|x86.Build.0 = Release|x86
+		{24E0B385-5DC6-4F1C-B0A2-0118FD9E6EC4}.Debug|x86.ActiveCfg = Debug|x86
+		{24E0B385-5DC6-4F1C-B0A2-0118FD9E6EC4}.Debug|x86.Build.0 = Debug|x86
+		{24E0B385-5DC6-4F1C-B0A2-0118FD9E6EC4}.Release|x86.ActiveCfg = Release|x86
+		{24E0B385-5DC6-4F1C-B0A2-0118FD9E6EC4}.Release|x86.Build.0 = Release|x86
+		{307756A1-2ECE-4343-B9F6-543FFF40EBDA}.Debug|x86.ActiveCfg = Debug|x86
+		{307756A1-2ECE-4343-B9F6-543FFF40EBDA}.Debug|x86.Build.0 = Debug|x86
+		{307756A1-2ECE-4343-B9F6-543FFF40EBDA}.Release|x86.ActiveCfg = Release|x86
+		{307756A1-2ECE-4343-B9F6-543FFF40EBDA}.Release|x86.Build.0 = Release|x86
+		{9F482FA4-4C48-400C-8722-DB9DFAD21805}.Debug|x86.ActiveCfg = Debug|x86
+		{9F482FA4-4C48-400C-8722-DB9DFAD21805}.Debug|x86.Build.0 = Debug|x86
+		{9F482FA4-4C48-400C-8722-DB9DFAD21805}.Release|x86.ActiveCfg = Release|x86
+		{9F482FA4-4C48-400C-8722-DB9DFAD21805}.Release|x86.Build.0 = Release|x86
+		{3E6718D9-E601-4799-A3A2-32C2D20E3BE3}.Debug|x86.ActiveCfg = Debug|x86
+		{3E6718D9-E601-4799-A3A2-32C2D20E3BE3}.Debug|x86.Build.0 = Debug|x86
+		{3E6718D9-E601-4799-A3A2-32C2D20E3BE3}.Release|x86.ActiveCfg = Release|x86
+		{3E6718D9-E601-4799-A3A2-32C2D20E3BE3}.Release|x86.Build.0 = Release|x86
+		{57FF60D3-F349-4303-A15A-50EBED1B9241}.Debug|x86.ActiveCfg = Debug|x86
+		{57FF60D3-F349-4303-A15A-50EBED1B9241}.Debug|x86.Build.0 = Debug|x86
+		{57FF60D3-F349-4303-A15A-50EBED1B9241}.Release|x86.ActiveCfg = Release|x86
+		{57FF60D3-F349-4303-A15A-50EBED1B9241}.Release|x86.Build.0 = Release|x86
+		{4D0129AF-D8BB-48CF-AF8E-B7A5C73247CF}.Debug|x86.ActiveCfg = Debug|x86
+		{4D0129AF-D8BB-48CF-AF8E-B7A5C73247CF}.Debug|x86.Build.0 = Debug|x86
+		{4D0129AF-D8BB-48CF-AF8E-B7A5C73247CF}.Release|x86.ActiveCfg = Release|x86
+		{4D0129AF-D8BB-48CF-AF8E-B7A5C73247CF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

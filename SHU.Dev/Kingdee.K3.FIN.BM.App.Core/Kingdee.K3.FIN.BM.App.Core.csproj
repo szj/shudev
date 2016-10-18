@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e695a1ef-f70b-4a2a-89a9-7fd12835e41e</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Kingdee.K3.FIN.BM.App.Core</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS.Core" />
+    <Reference Include="Kingdee.K3.FIN.BM.Contracts" />
+    <Reference Include="Kingdee.BOS" />
+    <Reference Include="Kingdee.BOS.DataEntity" />
+    <Reference Include="Kingdee.K3.FIN.ReportEntity" />
+    <Reference Include="Kingdee.BOS.App" />
+    <Reference Include="Kingdee.K3.FIN.Core" />
+    <Reference Include="Kingdee.BOS.Contracts" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.BusinessEntity" />
+    <Reference Include="Kingdee.BOS.KDSReportEntity" />
+    <Reference Include="System.Data" />
+    <Reference Include="Kingdee.BOS.KDSReportCommon" />
+    <Reference Include="System.Core" />
+    <Reference Include="Kingdee.K3.FIN.App.Core" />
+    <Reference Include="Kingdee.BOS.ServiceHelper" />
+    <Reference Include="Kingdee.BOS.App.Core" />
+    <Reference Include="Kingdee.BOS.VerificationHelper" />
+    <Reference Include="Kingdee.BOS.ProductModel" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Kingdee.BOS.App.KDSCaculateService" />
+    <Reference Include="Kingdee.K3.FIN.BM.Common.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\AppBusinessService\BudgetCtrlRuleService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\AppBusinessService\TestBudgetService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetAdjustService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetBillUsedService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCalendarService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrlLog.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\Log.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrlPlateformService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\AbstractAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\CalculateBillUsedAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\CalculateBudgetAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\GetBudgetOrgDeptAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\CtrlDimensionConditionsAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\GetPeriodInfoAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\GetBudgetValueAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\Actions\InitVariablesAction.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\BudgetCtrlEngine.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\BudgetCtrlProgress.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\BudgetCtrlValidator.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\BudgetCtrlManager.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\EngineContext.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetDataArgs.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\CtrlDimension.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetOrgDept.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetData\BudgetDataCtrl.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetData\BillUsedCtrlData.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetData\BudgetDataWriter.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetData\BudgetDataReader.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BillUsedInfo.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BugdetUsedInfo.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrlResult.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\CtrlOption.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\ControlType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\WarpType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BaseDataInfo.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetCtrl\BudgetCtrlTest.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetDimensionService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetFormulaService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetMonitorService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetOrgEditService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetReportPlateService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BudgetUsedArgs.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BillUsedCtrl.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\UsedCtrlDimension.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\UsedDataType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\UseType.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\CtrlLevel.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\BugdetDataService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\Caculate\CaculateService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\CommonService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\DimensionService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\DistributeService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\PivotGrid\OperationService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\PivotGrid\ReportDimsion.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\ReportOrgService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\ReportSchemeService.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\Repositories\CommonRepository.cs" />
+    <Compile Include="Kingdee\K3\FIN\BM\App\Core\Repositories\CtrlRuleRepository.cs" />
+  </ItemGroup>
+</Project>
